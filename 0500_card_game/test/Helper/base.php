@@ -2,15 +2,15 @@
 
 class Test_Base extends PHPUnit_Framework_TestCase
 {
-	const FILE_PATH = 'data/input.txt';
+	const FILE_PATH = 'test/data/input.txt';
 
-	public function setUp()
+	protected function setUp()
 	{
 		parent::setUp();
 		$this->delete_file();
 	}
 
-	#public function tearDown()
+	#protected function tearDown()
 	#{
 	#	parent::tearDown();
 	#	$this->delete_file();
@@ -18,8 +18,8 @@ class Test_Base extends PHPUnit_Framework_TestCase
 	#
 	private function delete_file()
 	{
-		if(file_exists('data/input.txt')){
-			unlink('data/input.txt');
+		if(file_exists(self::FILE_PATH)){
+			unlink(self::FILE_PATH);
 		}
 	}
 }
