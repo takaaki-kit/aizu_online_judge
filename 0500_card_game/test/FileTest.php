@@ -7,7 +7,6 @@ class FileTest extends Test_Base
 {
 	public function test_全てのデータを返す()
 	{
-		(new File(self::FILE_PATH))->write(['5 2','3 4']);
-		$this->assertEquals(['5 2', '3 4'], (new File(self::FILE_PATH))->read());
+		$this->assertEquals(['2', '6 2', '3 4'], (new File(self::FILE_PATH))->read());
 	}
 }

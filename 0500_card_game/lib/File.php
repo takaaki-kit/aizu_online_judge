@@ -17,12 +17,12 @@ class File
 		return $content;
 	}
 
-	public function write($result)
-	{
-		$fp = fopen($this->file_path, "a");
-		foreach($result as $score){
-			fwrite($fp, $score . "\n");
-		}
-		fclose($fp);
-	}
+#	public function write($result)
+#	{
+#		$fp = fopen($this->file_path, "a");
+#		foreach($result as $score){
+#			fwrite($fp, $score . "\n");
+#		}
+#		fclose($fp);
+#	}
 }

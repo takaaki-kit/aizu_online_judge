@@ -3,4 +3,4 @@
 require_once('File.php');
 
 $contents = (new File('data/input.txt'))->read();
-(new Game())->start();
+echo (new Game())->start();
