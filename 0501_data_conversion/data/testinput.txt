@@ -1,0 +1,10 @@
+3
+aho AHO
+boke BOKE
+kasu KASU
+5
+aho
+Boke
+kasU
+boke
+kasu
