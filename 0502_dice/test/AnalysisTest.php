@@ -21,14 +21,4 @@ class AnalysisTest extends PHPUnit_Framework_TestCase
 		$analysis->start();
 		$this->assertEquals(21, $analysis->get_result());
 	}
-
-	/** @test */
-	public function サイコロを操作する2()
-	{
-		$dice = new Dice();
-		$contents = (new File('data/test2.txt'))->read();
-		$analysis = new Analysis($contents, $dice);
-		$analysis->start();
-		$this->assertEquals(34, $analysis->get_result());
-	}
 }
