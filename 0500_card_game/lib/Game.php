@@ -1,5 +1,8 @@
 <?php
 
+require_once('Score.php');
+require_once('Buttle.php');
+
 class Game
 {
 	public function __construct($input)
