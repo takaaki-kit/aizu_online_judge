@@ -79,7 +79,7 @@ class Dice
 
     public function get_top_number()
     {
-        return 2;
+        return $this->now_number['top'];
     }
 
     public function update($new_number)

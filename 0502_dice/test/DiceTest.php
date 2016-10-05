@@ -4,6 +4,11 @@ require_once('Dice.php');
 
 class DiceTest extends PHPUnit_Framework_TestCase
 {
+	/** @test */
+	public function 現在のサイコロのtopの数字を返す()
+	{
+		$this->assertEquals(1, (new Dice())->get_top_number());
+	}
     /** @test */
     public function サイコロの目が更新されること()
     {
