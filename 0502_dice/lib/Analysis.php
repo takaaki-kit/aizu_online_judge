@@ -37,6 +37,7 @@ class Analysis
 			}
 			$this->point += $this->dice->get_top_number();
 		}	
+		$this->start_line += $this->get_number_of_operations();
 	}
 
 	public function get_result()
